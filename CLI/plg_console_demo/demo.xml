@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="console" method="upgrade">
+	<name>plg_console_demo</name>
+	<author>aukaheng</author>
+	<creationDate>April 2025</creationDate>
+	<copyright>(C) ME</copyright>
+	<license>UNLICENSED</license>
+	<version>1.0.0</version>
+	<description></description>
+	
+	<namespace path="src">AKH\Plugin\Console\Demo</namespace>
+	
+	<files>
+		<folder plugin="demo">services</folder>
+		<folder>src</folder>
+	</files>
+</extension>
