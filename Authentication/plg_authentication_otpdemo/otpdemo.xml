@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="authentication" method="upgrade">
+	<name>plg_authentication_otpdemo</name>
+	<author>aukaheng</author>
+	<creationDate>April 2025</creationDate>
+	<copyright>(C) ME</copyright>
+	<license>UNLICENSED</license>
+	<version>1.0.0</version>
+	<description></description>
+	
+	<namespace path="src">AKH\Plugin\Authentication\OTPDemo</namespace>
+	
+	<files>
+		<folder plugin="otpdemo">services</folder>
+		<folder>src</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_authentication_otpdemo.ini</language>
+		<language tag="en-GB">language/en-GB/plg_authentication_otpdemo.sys.ini</language>
+	</languages>
+</extension>
