@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="authentication" method="upgrade">
+	<name>plg_authentication_openiddemo</name>
+	<author>aukaheng</author>
+	<creationDate>April 2025</creationDate>
+	<copyright>(C) ME</copyright>
+	<license>UNLICENSED</license>
+	<version>1.0.0</version>
+	<description></description>
+	
+	<namespace path="src">AKH\Plugin\Authentication\OpenIDDemo</namespace>
+	
+	<files>
+		<folder plugin="openiddemo">services</folder>
+		<folder>src</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_authentication_openiddemo.sys.ini</language>
+		<language tag="en-GB">language/en-GB/plg_authentication_openiddemo.ini</language>
+	</languages>
+	
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="account_url" type="url" default="https://abc.com" label="URL" />
+                <field name="account_client_id" type="text" default="AbCdEfG" label="Client ID" />
+                <field name="account_client_secret" type="text" default="ZyXwVu" label="Client Secret" />
+            
+                <field name="use_proxy" type="radio" default="0" label="Use Proxy" description="We need to use proxy if our web server is hosted in headquarter environment">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="proxy_server" type="text" default="proxyserver.mine.local" label="Proxy Server" />
+                <field name="proxy_port" type="text" default="3128" label="Proxy Port" />
+            
+                <field name="redirect_uri_authority" type="url" default="http://localhost" label="Redirect URI" description="The place to go after OpenID login" />
+            </fieldset>
+        </fields>
+	</config>
+</extension>
