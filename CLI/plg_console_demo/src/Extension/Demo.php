@@ -10,7 +10,7 @@ use Joomla\Application\ApplicationEvents;
 use Joomla\Database\DatabaseAwareTrait;
 use AKH\Plugin\Console\Demo\CliCommand\DoSomething;
 
-class Demo extends CMSPlugin implements SubscriberInterface
+final class Demo extends CMSPlugin implements SubscriberInterface
 {
     use DatabaseAwareTrait;
 
