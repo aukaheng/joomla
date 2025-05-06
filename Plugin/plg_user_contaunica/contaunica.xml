@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="user" method="upgrade">
+	<name>plg_user_contaunica</name>
+	<author>aukaheng</author>
+	<creationDate>June 2013</creationDate>
+	<copyright>(C) ME</copyright>
+	<license>UNLICENSED</license>
+	<version>1.0.0</version>
+	<description></description>
+	
+	<namespace path="src">AKH\Plugin\User\ContaUnica</namespace>
+	
+	<files>
+		<folder plugin="contaunica">services</folder>
+		<folder>src</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_user_contaunica.ini</language>
+		<language tag="en-GB">language/en-GB/plg_user_contaunica.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="account_url" type="url" default="" label="自然人" />
+				
+				<field name="entity_url" type="url" default="" label="私人實體" />
+				
+				<field name="next" type="url" default="http://localhost" label="Next" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
