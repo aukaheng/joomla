@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="authentication" method="upgrade">
+	<name>plg_authentication_contaunica</name>
+	<author>aukaheng</author>
+	<creationDate>May 2025</creationDate>
+	<copyright>(C) ME</copyright>
+	<license>UNLICENSED</license>
+	<version>1.0.0</version>
+	<description></description>
+	
+	<namespace path="src">AKH\Plugin\Authentication\ContaUnica</namespace>
+	
+	<files>
+		<folder plugin="contaunica">services</folder>
+		<folder>src</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_authentication_contaunica.sys.ini</language>
+		<language tag="en-GB">language/en-GB/plg_authentication_contaunica.ini</language>
+	</languages>
+	
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="account_url" type="url" default="" label="自然人" />
+                <field name="account_client_id" type="text" default="" label="自然人 Client ID" />
+                <field name="account_client_secret" type="text" default="" label="自然人 Client Secret" />
+            
+                <field name="entity_url" type="url" default="" label="私人實體" />
+                <field name="entity_client_id" type="text" default="" label="私人實體 Client ID" />
+                <field name="entity_client_secret" type="text" default="" label="私人實體 Client Secret" />
+            
+                <field name="use_proxy" type="radio" default="0" label="Use Proxy" description="We need to use proxy if our web server is hosted in THEIR environment">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="proxy_server" type="text" default="" label="Proxy Server" />
+                <field name="proxy_port" type="text" default="3128" label="Proxy Port" />
+            
+                <field name="redirect_uri_authority" type="url" default="http://localhost" label="Redirect URI" description="The place to go after Conta Única login" />
+            </fieldset>
+        </fields>
+	</config>
+</extension>
