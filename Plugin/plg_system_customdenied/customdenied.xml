@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>plg_system_customdenied</name>
+	<author>aukaheng</author>
+	<creationDate>June 2025</creationDate>
+	<copyright>(C) ME</copyright>
+	<license>UNLICENSED</license>
+	<version>1.0.0</version>
+	<description></description>
+	
+	<namespace path="src">AKH\Plugin\System\CustomDenied</namespace>
+	
+	<files>
+		<folder plugin="customdenied">services</folder>
+		<folder>src</folder>
+	</files>
+
+    <languages>
+		<language tag="en-GB">language/en-GB/plg_system_customdenied.ini</language>
+		<language tag="en-GB">language/en-GB/plg_system_customdenied.sys.ini</language>
+        <language tag="pt-PT">language/pt-PT/plg_system_customdenied.ini</language>
+		<language tag="pt-PT">language/pt-PT/plg_system_customdenied.sys.ini</language>
+        <language tag="zh-TW">language/zh-TW/plg_system_customdenied.ini</language>
+		<language tag="zh-TW">language/zh-TW/plg_system_customdenied.sys.ini</language>
+	</languages>
+</extension>
